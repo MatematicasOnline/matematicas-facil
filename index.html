@@ -4,14 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MateMaticas Fácil | Calculadoras, ejercicios y explicaciones de matemática</title>
-<meta name="description" content="Aprendé matemática con calculadoras de fracciones, porcentajes y ecuaciones, explicaciones paso a paso y ejercicios interactivos.">
-<meta name="keywords" content="matemática, calculadora de fracciones, porcentajes, ecuaciones, ejercicios de matemática">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#4f46e5">
-<meta property="og:title" content="MateMaticas Fácil">
-<meta property="og:description" content="Calculadoras, explicaciones y ejercicios interactivos de matemática.">
-<meta property="og:type" content="website">
+<title>MateMaticas Fácil</title>
 
 <style>
 * {
@@ -398,45 +391,6 @@ footer {
         flex-direction: column;
     }
 }
-
-/* ===== V2 PROFESIONAL ===== */
-html { scroll-behavior: smooth; }
-body { line-height: 1.55; }
-button, input, select { transition: .2s ease; }
-button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid rgba(79,70,229,.25); outline-offset: 2px; }
-nav { display:flex; flex-wrap:wrap; justify-content:flex-end; }
-nav button { padding:8px 4px; }
-.nav-premium { color:#7c3aed !important; }
-.hero-badges { display:flex; justify-content:center; flex-wrap:wrap; gap:10px; margin-top:25px; }
-.badge { background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.25); padding:7px 12px; border-radius:999px; font-size:14px; }
-.section-title { margin-bottom:8px; font-size:32px; }
-.section-subtitle { color:#667085; margin-bottom:25px; }
-.tool-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; margin-top:25px; }
-.tool-card { background:#fff; border:1px solid #eaecf0; padding:25px; border-radius:18px; box-shadow:0 5px 20px rgba(0,0,0,.05); }
-.tool-card h3 { margin-bottom:8px; }
-.tool-card p { color:#667085; }
-.article { background:#fff; padding:28px; border-radius:18px; box-shadow:0 5px 20px rgba(0,0,0,.06); margin-top:22px; }
-.article h2, .article h3 { margin:18px 0 8px; }
-.article ul { padding-left:22px; }
-.faq-item { background:#fff; border:1px solid #eaecf0; border-radius:14px; padding:18px; margin:10px 0; }
-.faq-item summary { cursor:pointer; font-weight:bold; }
-.ad-slot { min-height:90px; border:1px dashed #cbd5e1; background:#f8fafc; color:#64748b; display:flex; align-items:center; justify-content:center; border-radius:12px; margin:25px 0; font-size:13px; }
-.premium-box { background:linear-gradient(135deg,#312e81,#7c3aed); color:#fff; padding:32px; border-radius:22px; box-shadow:0 12px 35px rgba(49,46,129,.22); }
-.premium-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:15px; margin:20px 0; }
-.premium-feature { background:rgba(255,255,255,.12); padding:16px; border-radius:14px; }
-.price { font-size:40px; font-weight:800; margin:12px 0; }
-.premium-button { border:0; border-radius:12px; padding:14px 20px; font-weight:800; cursor:pointer; background:#fff; color:#4c1d95; }
-.notice { padding:14px 16px; border-radius:12px; background:#fff7ed; color:#9a3412; margin-top:15px; }
-.legal-links { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; margin-top:12px; }
-.legal-links button { color:#fff; background:none; border:0; cursor:pointer; text-decoration:underline; }
-.search-box { margin:20px 0; }
-.search-box input { max-width:650px; }
-@media(max-width:750px) {
-  .tool-grid, .premium-grid { grid-template-columns:1fr; }
-  .section-title { font-size:26px; }
-  nav { justify-content:center; }
-}
-
 </style>
 </head>
 
@@ -454,8 +408,6 @@ nav button { padding:8px 4px; }
         <button onclick="mostrar('porcentajes')">Porcentajes</button>
         <button onclick="mostrar('ecuaciones')">Ecuaciones</button>
         <button onclick="mostrar('ejercicios')">Ejercicios</button>
-        <button onclick="mostrar('aprender')">Aprender</button>
-        <button class="nav-premium" onclick="mostrar('premium')">Premium</button>
     </nav>
 
 </header>
@@ -480,21 +432,11 @@ nav button { padding:8px 4px; }
         >
             Empezar a practicar
         </button>
-        <div class="hero-badges">
-            <span class="badge">Calculadoras</span>
-            <span class="badge">Ejercicios</span>
-            <span class="badge">Explicaciones</span>
-            <span class="badge">Progreso</span>
-        </div>
 
     </div>
 
 
     <div class="contenedor">
-
-        <div class="ad-slot" aria-label="Espacio reservado para publicidad">
-            Espacio publicitario — se activará cuando la web tenga un sistema de anuncios aprobado
-        </div>
 
         <h2>¿Qué querés practicar?</h2>
 
@@ -914,155 +856,12 @@ nav button { padding:8px 4px; }
 </section>
 
 
-
-<!-- ================= APRENDER ================= -->
-<section id="aprender" class="seccion">
-  <div class="contenedor">
-    <h1 class="section-title">Aprendé matemática paso a paso</h1>
-    <p class="section-subtitle">Explicaciones sencillas, ejemplos y práctica para reforzar lo aprendido.</p>
-
-    <div class="search-box">
-      <input id="buscadorAprender" type="search" placeholder="Buscar: fracciones, porcentajes, ecuaciones..." oninput="filtrarAprender()">
-    </div>
-
-    <div class="tool-grid" id="contenidoAprender">
-      <article class="tool-card aprendizaje">
-        <h3>Fracciones</h3>
-        <p>Una fracción representa una parte de un todo. El número de arriba es el numerador y el de abajo es el denominador.</p>
-        <button class="principal" onclick="mostrar('fracciones')">Usar calculadora</button>
-      </article>
-      <article class="tool-card aprendizaje">
-        <h3>Porcentajes</h3>
-        <p>Para calcular un porcentaje de una cantidad, multiplicá la cantidad por el porcentaje y dividí el resultado por 100.</p>
-        <button class="principal" onclick="mostrar('porcentajes')">Practicar</button>
-      </article>
-      <article class="tool-card aprendizaje">
-        <h3>Ecuaciones</h3>
-        <p>En una ecuación como ax + b = c, primero aislamos el término con x y luego dividimos por a.</p>
-        <button class="principal" onclick="mostrar('ecuaciones')">Resolver</button>
-      </article>
-      <article class="tool-card aprendizaje">
-        <h3>Simplificación de fracciones</h3>
-        <p>Para simplificar una fracción, dividí numerador y denominador por su máximo común divisor.</p>
-        <button class="principal" onclick="mostrar('fracciones')">Probar</button>
-      </article>
-    </div>
-
-    <div class="article">
-      <h2>¿Cómo sumar fracciones?</h2>
-      <p>Si tienen el mismo denominador, sumá los numeradores y conservá el denominador. Si tienen denominadores diferentes, buscá un denominador común.</p>
-      <h3>Ejemplo</h3>
-      <p>1/2 + 1/3 = 3/6 + 2/6 = 5/6.</p>
-    </div>
-
-    <div class="article">
-      <h2>¿Cómo calcular un porcentaje?</h2>
-      <p>Usá la fórmula: cantidad × porcentaje ÷ 100.</p>
-      <p>Ejemplo: 20% de 150 = 150 × 20 ÷ 100 = 30.</p>
-    </div>
-
-    <div class="article">
-      <h2>Preguntas frecuentes</h2>
-      <details class="faq-item"><summary>¿La web es gratuita?</summary><p>Sí. Las herramientas principales están pensadas para utilizarse gratuitamente.</p></details>
-      <details class="faq-item"><summary>¿Puedo guardar mi progreso?</summary><p>La versión actual guarda el progreso localmente en el navegador mediante almacenamiento local.</p></details>
-      <details class="faq-item"><summary>¿Puedo usarla desde el celular?</summary><p>Sí. El diseño está adaptado para pantallas pequeñas.</p></details>
-      <details class="faq-item"><summary>¿Las respuestas muestran el procedimiento?</summary><p>Las calculadoras actuales muestran el resultado; una próxima mejora puede incorporar procedimientos completos paso a paso.</p></details>
-    </div>
-  </div>
-</section>
-
-<!-- ================= PREMIUM ================= -->
-<section id="premium" class="content-section premium-section">
-  <div class="section-header">
-    <span class="section-kicker">MATE MÁTICAS FÁCIL PREMIUM</span>
-    <h2>Aprendé más, sin límites</h2>
-    <p>Una opción Premium para acceder a herramientas y contenido adicional.</p>
-  </div>
-
-  <div class="premium-card">
-    <div class="premium-price">
-      <span class="price">US$2,99</span>
-      <span class="period">/ mes</span>
-    </div>
-
-    <ul class="premium-features">
-      <li>Sin anuncios durante el uso de la página.</li>
-      <li>Procedimientos y explicaciones más detalladas.</li>
-      <li>Más ejercicios y contenido educativo.</li>
-      <li>Acceso a futuras funciones Premium.</li>
-    </ul>
-
-    <button class="btn btn-primary premium-btn" onclick="startPayPalCheckout()">
-      Pagar con PayPal
-    </button>
-
-    <div class="payment-info">
-      <h3>Información sobre los pagos</h3>
-      <p>
-        Los cobros de Premium serán gestionados por el adulto responsable
-        del sitio y mediante un proveedor de pagos compatible.
-      </p>
-      <p class="payment-note">
-        Por seguridad, no se publicarán en esta página datos bancarios,
-        números de tarjetas, contraseñas ni otra información financiera personal.
-      </p>
-      <div class="payment-status">
-        <strong>Estado actual:</strong> pagos reales todavía no conectados. El botón de PayPal está preparado para una conexión futura.
-      </div>
-    </div>
-
-    <div id="premiumNotice" class="premium-notice" style="display:none;">
-      <strong>Premium todavía no está habilitado para pagos reales.</strong>
-      <p>
-        Esta sección es una presentación del servicio. Cuando se configure
-        un proveedor de pagos, el cobro se realizará de forma segura y la
-        información del responsable aparecerá en los términos y condiciones
-        correspondientes.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ================= PRIVACIDAD ================= -->
-<section id="privacidad" class="seccion">
-  <div class="contenedor">
-    <div class="article">
-      <h1>Política de privacidad</h1>
-      <p>MateMaticas Fácil puede guardar datos de progreso en el navegador del usuario para conservar puntos, rachas y configuración. Esta versión no necesita crear una cuenta para utilizar las herramientas.</p>
-      <p>Si posteriormente se incorporan anuncios, analítica, cuentas o servicios externos, esta política deberá actualizarse para describirlos correctamente.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ================= TERMINOS ================= -->
-<section id="terminos" class="seccion">
-  <div class="contenedor">
-    <div class="article">
-      <h1>Términos y condiciones</h1>
-      <p>Las herramientas de MateMaticas Fácil están destinadas al aprendizaje y la práctica. Los resultados deben utilizarse como apoyo educativo y comprobarse cuando sea necesario.</p>
-      <p>Las funciones Premium mostradas en esta versión son una presentación del producto y no constituyen todavía un sistema de cobro activo.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CONTACTO ================= -->
-<section id="contacto" class="seccion">
-  <div class="contenedor">
-    <div class="article">
-      <h1>Contacto</h1>
-      <p>Para esta versión se puede añadir posteriormente un formulario de contacto o una dirección de correo del proyecto.</p>
-    </div>
-  </div>
-</section>
-
 <footer>
-    <p>© 2026 MateMaticas Fácil</p>
-    <div class="legal-links">
-        <button onclick="mostrar('privacidad')">Privacidad</button>
-        <button onclick="mostrar('terminos')">Términos</button>
-        <button onclick="mostrar('contacto')">Contacto</button>
-        <button onclick="mostrar('premium')">Premium</button>
-    </div>
+
+    <p>
+        © 2026 MateMaticas Fácil
+    </p>
+
 </footer>
 
 
@@ -2171,48 +1970,11 @@ function numeroAleatorio(min, max) {
 }
 
 
-
-/* ================= FUNCIONES V2 ================= */
-
-function filtrarAprender() {
-    const q = document.getElementById("buscadorAprender").value.toLowerCase().trim();
-    document.querySelectorAll(".aprendizaje").forEach(function(card) {
-        card.style.display = card.innerText.toLowerCase().includes(q) ? "" : "none";
-    });
-}
-
-function mostrarAvisoPremium() {
-    const aviso = document.getElementById("premiumAviso");
-    if (aviso) aviso.style.display = "block";
-}
-
 /* ================= INICIAR ================= */
 
 cargarProgreso();
 nuevoEjercicio();
 
-
-// Configuración futura de PayPal.
-// El adulto responsable deberá colocar aquí el enlace de pago oficial
-// generado por su cuenta/proveedor. No colocar contraseñas ni datos bancarios.
-const PAYPAL_CHECKOUT_URL = "";\n\nfunction startPayPalCheckout() {
-  const notice = document.getElementById('premiumNotice');
-  if (!notice) return;
-
-  notice.innerHTML = `
-    <strong>PayPal todavía no está conectado.</strong>
-    <p>
-      El botón ya está preparado para PayPal, pero el cobro real se habilitará
-      cuando el adulto responsable configure la cuenta y el enlace de pago.
-    </p>
-    <p class="payment-note">
-      No se realizan cobros mientras esta conexión esté pendiente.
-    </p>
-  `;
-  notice.style.display = 'block';
-  notice.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-}
-}
 </script>
 
 </body>
