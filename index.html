@@ -342,6 +342,56 @@ button.principal:hover {
     color: #667085;
 }
 
+/* PREMIUM */
+.premium-seccion {
+    padding: 60px 20px;
+}
+
+.premium-box {
+    max-width: 850px;
+    margin: 0 auto;
+    background: white;
+    padding: 45px;
+    border-radius: 22px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.premium-box h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.premium-box .precio {
+    font-size: 34px;
+    font-weight: bold;
+    color: #4f46e5;
+    margin: 25px 0;
+}
+
+.premium-lista {
+    text-align: left;
+    max-width: 500px;
+    margin: 25px auto;
+    line-height: 2;
+}
+
+.boton-premium {
+    display: inline-block;
+    padding: 15px 28px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-premium:hover {
+    background: #3730a3;
+}
+
 /* FOOTER */
 
 footer {
@@ -408,6 +458,7 @@ footer {
         <button onclick="mostrar('porcentajes')">Porcentajes</button>
         <button onclick="mostrar('ecuaciones')">Ecuaciones</button>
         <button onclick="mostrar('ejercicios')">Ejercicios</button>
+        <button onclick="mostrar('premium')">Premium</button>
     </nav>
 
 </header>
@@ -856,6 +907,44 @@ footer {
 </section>
 
 
+
+<!-- ================= PREMIUM ================= -->
+
+<section id="premium" class="seccion">
+
+    <div class="premium-seccion">
+
+        <div class="premium-box">
+
+            <h1>MateMaticas Fácil Premium</h1>
+
+            <p>
+                Accedé a las funciones Premium de MateMaticas Fácil.
+            </p>
+
+            <div class="precio">
+                US$2,99 / mes
+            </div>
+
+            <div class="premium-lista">
+                <div>✓ Contenido Premium</div>
+                <div>✓ Más ejercicios para practicar</div>
+                <div>✓ Acceso a futuras funciones Premium</div>
+            </div>
+
+            <button
+                class="boton-premium"
+                onclick="startPayPalCheckout()"
+            >
+                Pagar con PayPal
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
 <footer>
 
     <p>
@@ -866,6 +955,18 @@ footer {
 
 
 <script>
+
+
+/* ================= PAYPAL PREMIUM ================= */
+
+function startPayPalCheckout() {
+    window.open(
+        "https://www.paypal.com/ncp/payment/U7F6GVLNWH7RJ",
+        "_blank",
+        "noopener,noreferrer"
+    );
+}
+
 
 /* ================= VARIABLES ================= */
 
